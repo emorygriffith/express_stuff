@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'This is Emorys first express app' });
 });
 
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'About Emory' });
+});
+
 module.exports = router;
